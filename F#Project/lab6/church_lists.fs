@@ -249,6 +249,22 @@ let meanOfAbs list =
         |> List.averageBy float
 
 
+// 17
+let isDigitTuple (t : int * int * int * int * int) =
+    let (a, b, c, d, e) = t
+    List.forall (fun x -> x >= 0 && x <= 9) [a; b; c; d; e]
+
+let tupleToNumber (a, b, c, d, e) =
+    a * 10000 + b * 1000 + c * 100 + d * 10 + e
+
+let processTuples list =
+    list
+    |> List.filter isDigitTuple
+    |> List.sort
+    |> List.map tupleToNumber
+
+
+
 let result = 
     let l = readData
     System.Console.WriteLine(listMin l)
@@ -269,6 +285,11 @@ let result =
     let listik = readData
     System.Console.WriteLine (FirstMaxRec listik)
     System.Console.WriteLine (FirstMax listik)
+
+    let testTuples = [(7,3,4,5,6); (2,3,4,6,7); (2,3,4,5,6); (4,3,10,4,5)]
+    let result = processTuples testTuples
+    writeList result
+
     
     0
 
