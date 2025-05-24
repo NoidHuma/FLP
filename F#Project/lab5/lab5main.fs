@@ -1,6 +1,6 @@
 ﻿module lab5main
 
-open first_steps
+open recursion
 
 let runLab5 =
     result

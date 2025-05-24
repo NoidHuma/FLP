@@ -7,13 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="lab5\first_steps.fs" />
+    <Compile Include="lab5\recursion.fs" />
     <Compile Include="lab5\lab5main.fs" />
+    <Compile Include="lab6\church_lists.fs" />
+    <Compile Include="lab6\lab6main.fs" />
     <Compile Include="main.fs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="lab6\" />
   </ItemGroup>
 
 </Project>
