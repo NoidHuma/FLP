@@ -2,6 +2,7 @@
 
 open church_lists
 
+
 let runLab6 =
     result
 
