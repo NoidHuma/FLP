@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="ID1\ID1main.fs" />
     <Compile Include="lab5\recursion.fs" />
     <Compile Include="lab5\lab5main.fs" />
     <Compile Include="lab6\church_lists.fs" />
@@ -15,9 +16,9 @@
     <Compile Include="lab7\Figures.fs" />
     <Compile Include="lab7\FunctorsAndMonads.fs" />
     <Compile Include="lab7\GeometryShapes.fs" />
-    <Compile Include="lab7\lab7main.fs" />
     <Compile Include="lab7\Parser.fs" />
     <Compile Include="lab7\Passport.fs" />
+    <Compile Include="lab7\lab7main.fs" />
     <Compile Include="main.fs" />
   </ItemGroup>
 
