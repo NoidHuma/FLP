@@ -264,6 +264,24 @@ let processTuples list =
     |> List.map tupleToNumber
 
 
+// 18
+let readArray n =
+    Array.init n (fun _ -> Convert.ToInt32(Console.ReadLine()))
+
+let readArrayData() =
+    printfn "Введите длину массива:"
+    let n = Convert.ToInt32(Console.ReadLine())
+    readArray n
+
+let writeArray (arr: int[]) =
+    Array.iter (fun (x : int) -> Console.WriteLine(x)) arr
+
+let union arr1 arr2 =
+    Array.append arr1 arr2
+    |> Array.distinct
+    |> Array.sort
+
+
 
 let result = 
     let l = readData
@@ -289,6 +307,8 @@ let result =
     let testTuples = [(7,3,4,5,6); (2,3,4,6,7); (2,3,4,5,6); (4,3,10,4,5)]
     let result = processTuples testTuples
     writeList result
+
+
 
     
     0
